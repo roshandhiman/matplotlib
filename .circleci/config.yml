@@ -103,10 +103,17 @@ commands:
       - run:
           name: Install Python dependencies
           command: |
+<<<<<<< HEAD
             python -m pip install --user -r requirements/dev/build-requirements.txt
             python -m pip install --user \
                 numpy<< parameters.numpy_version >> \
                 -r requirements/doc/doc-requirements.txt
+=======
+            python -m pip install --user --group build
+            python -m pip install --user \
+                numpy<< parameters.numpy_version >> \
+                --group doc
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
             python -m pip install --no-deps --user \
                 git+https://github.com/matplotlib/mpl-sphinx-theme.git
 

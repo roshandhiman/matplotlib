@@ -3050,6 +3050,7 @@ def offset_copy(trans, fig=None, x=0.0, y=0.0, units='inches'):
         y /= 72.0
     # Default units are 'inches'
     return trans + ScaledTranslation(x, y, fig.dpi_scale_trans)
+<<<<<<< HEAD
 
 
 class IndirectTransform(Transform):
@@ -3073,3 +3074,5 @@ class IndirectTransform(Transform):
     def inverted(self):
         t = self.func()
         return t.inverted()
+=======
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36

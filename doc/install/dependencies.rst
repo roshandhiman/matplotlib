@@ -406,6 +406,7 @@ Documentation dependencies
 Python
 ------
 
+<<<<<<< HEAD
 The additional Python packages required to build the
 :ref:`documentation <documenting-matplotlib>` are listed in
 :file:`doc-requirements.txt` and can be installed using ::
@@ -417,6 +418,13 @@ The content of :file:`doc-requirements.txt` is also shown below:
 .. include:: ../../requirements/doc/doc-requirements.txt
    :literal:
 
+=======
+The additional Python packages required to build the :ref:`documentation
+<documenting-matplotlib>` are listed in :file:`pyproject.toml` and can be
+installed using ::
+
+    pip install --group doc
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
 
 .. _doc-dependencies-external:
 

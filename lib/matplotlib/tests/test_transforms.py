@@ -9,8 +9,12 @@ from matplotlib import scale
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import matplotlib.transforms as mtransforms
+<<<<<<< HEAD
 from matplotlib.transforms import (
     Affine2D, Bbox, IndirectTransform, TransformedBbox, _ScaledRotation)
+=======
+from matplotlib.transforms import Affine2D, Bbox, TransformedBbox, _ScaledRotation
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
 from matplotlib.path import Path
 from matplotlib.testing.decorators import image_comparison, check_figures_equal
 from unittest.mock import MagicMock
@@ -1133,6 +1137,7 @@ def test_scaledrotation_get_matrix_invalid():
                                   [1,  0]])
     assert matrix is not None
     assert_allclose(matrix[:2, :2], expected_rotation, atol=1e-15)
+<<<<<<< HEAD
 
 
 def test_indirect_transform_basic():
@@ -1141,3 +1146,5 @@ def test_indirect_transform_basic():
 
     transform = IndirectTransform(get_transform)
     assert_array_equal(transform.transform([[1, 1]]), [[2, 2]])
+=======
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36

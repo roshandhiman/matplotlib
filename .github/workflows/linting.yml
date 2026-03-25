@@ -18,7 +18,11 @@ jobs:
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
         with:
           python-version: "3.x"
+<<<<<<< HEAD
       - uses: j178/prek-action@0bb87d7f00b0c99306c8bcb8b8beba1eb581c037  # v1.1.1
+=======
+      - uses: j178/prek-action@79f765515bd648eb4d6bb1b17277b7cb22cb6468  # v2.0.0
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
         with:
           extra_args: --hook-stage manual --all-files
 
@@ -69,7 +73,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install mypy
+<<<<<<< HEAD
         run: pip3 install -r requirements/testing/mypy.txt -r requirements/testing/all.txt
+=======
+        run: pip3 install --group build --group typing
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
 
       - name: Set up reviewdog
         uses: reviewdog/action-setup@d8a7baabd7f3e8544ee4dbde3ee41d0011c3a93f  # v1.5.0

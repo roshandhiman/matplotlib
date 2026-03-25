@@ -451,7 +451,11 @@ for cmap_category, cmap_list in cmaps.items():
 # ==========
 #
 # .. _Third-party colormaps: https://matplotlib.org/mpl-third-party/#colormaps-and-styles
+<<<<<<< HEAD
 # .. [Ware] http://ccom.unh.edu/sites/default/files/publications/Ware_1988_CGA_Color_sequences_univariate_maps.pdf
+=======
+# .. [Ware] https://dl.acm.org/doi/10.1109/38.7760
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
 # .. [Moreland] http://www.kennethmoreland.com/color-maps/ColorMapsExpanded.pdf
 # .. [list-colormaps] https://gist.github.com/endolith/2719900#id7
 # .. [mycarta-banding] https://mycarta.wordpress.com/2012/10/14/the-rainbow-is-deadlong-live-the-rainbow-part-4-cie-lab-heated-body/

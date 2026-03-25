@@ -450,7 +450,11 @@ To build the documentation you must have the tagged version installed, but
 build the docs from the ``ver-doc`` branch.  An easy way to arrange this is::
 
   pip install matplotlib
+<<<<<<< HEAD
   pip install -r requirements/doc/doc-requirements.txt
+=======
+  pip install --group doc
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
   git checkout v3.7.0-doc
   git clean -xfd
   make -Cdoc O="-t release -j$(nproc)" html latexpdf LATEXMKOPTS="-silent -f"

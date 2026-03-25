@@ -177,7 +177,12 @@ setup.
 
       Install the Python dependencies with ::
 
+<<<<<<< HEAD
         pip install -r requirements/dev/dev-requirements.txt
+=======
+        pip install -U pip  # You may skip this step if pip 25.1 is already available.
+        pip install --group dev
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
 
       Remember to activate the environment whenever you start working on Matplotlib!
 
@@ -270,7 +275,11 @@ Install Matplotlib in editable mode
 Install Matplotlib in editable mode from the :file:`matplotlib` directory using the
 command ::
 
+<<<<<<< HEAD
     python -m pip install --verbose --no-build-isolation --editable ".[dev]"
+=======
+    python -m pip install --verbose --no-build-isolation --group dev --editable .
+>>>>>>> dc4d26f1c8a59b69daff71613ecc4de5d3263f36
 
 The 'editable/develop mode' builds everything and places links in your Python environment
 so that Python will be able to import Matplotlib from your development source directory.
